@@ -156,7 +156,7 @@
 				</ListDisplay>
 			</RelationWindow>
 			<Styles
-				StyleAppVer="4.00.0095"
+				StyleAppVer="4.00.0084"
 				>
 				<Style Name="Default Text" />
 				<Style
@@ -172,13 +172,13 @@
 				<Style Name="Comment" TextColor="#52a349" />
 				<Style Name="String" FixedWhiteSpace="0" TextColor="#bd8966" />
 				<Style Name="Keyword" TextColor="#5291c5" />
-				<Style Name="Control" Bold="1" TextColor="#5291c5" />
-				<Style Name="Special" Bold="1" Italic="1" />
+				<Style Name="Control" TextColor="#5291c5" />
+				<Style Name="Special" Italic="1" />
 				<Style Name="Boolean" TextColor="#5291c5" />
 				<Style Name="Debug" TextColor="#ff0000" Italic="1" Underline="Dotted" />
 				<Style Name="Null Value" ParentStyle="Ref to Const" />
 				<Style Name="System" ParentStyle="Reference" />
-				<Style Name="Declaration" Bold="1" TextColor="#808080" />
+				<Style Name="Declaration" TextColor="#808080" />
 				<Style
 					Name="Ref To Local"
 					TextColor="#c8c8c8"
@@ -193,12 +193,7 @@
 					FontPitchFamily="1"
 					FontCharset="0"
 					/>
-				<Style
-					Name="Highlight"
-					Bold="1"
-					TextColor="#000000"
-					BackColor="#ffff00"
-					/>
+				<Style Name="Highlight" TextColor="#000000" BackColor="#ffff00" />
 				<Style
 					Name="Symbol Characters"
 					FontName="Microsoft Sans Serif"
@@ -227,7 +222,7 @@
 					Bold="1"
 					ParentStyle="Reference"
 					/>
-				<Style Name="Selection" TextColor="#ffffff" BackColor="#215ba3" />
+				<Style Name="Selection" TextColor="#ffffff" BackColor="#4085d9" />
 				<Style Name="Declare Namespace" ParentStyle="Declaration" />
 				<Style Name="Ref to Namespace" ParentStyle="Reference" />
 				<Style
@@ -236,11 +231,7 @@
 					ParentStyle="Declaration"
 					/>
 				<Style Name="Declare Member" ParentStyle="Declaration" />
-				<Style
-					Name="Declare Method"
-					CharSpacing="10"
-					ParentStyle="Declare Function"
-					/>
+				<Style Name="Declare Method" ParentStyle="Declare Function" />
 				<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 				<Style
 					Name="Declare Function"
@@ -252,12 +243,12 @@
 				<Style
 					Name="Declare Struct"
 					KeepWithNextLine="1"
-					TextColor="#ffff00"
+					TextColor="#feffbf"
 					ParentStyle="Declaration"
 					/>
 				<Style Name="Declare Union" ParentStyle="Declare Struct" />
 				<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
-				<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
+				<Style Name="Declare Class" ParentStyle="Declare Struct" />
 				<Style
 					Name="Declare Var"
 					TextColor="#ffffff"
@@ -271,14 +262,13 @@
 				<Style Name="Preprocessor" ParentStyle="Declaration" />
 				<Style
 					Name="Search Result Heading"
-					Bold="1"
-					Underline="Single"
 					ParentStyle="Declaration"
+					Underline="Single"
 					/>
 				<Style
 					Name="Label"
 					Underline="Single"
-					TextColor="#ff0000"
+					TextColor="#3978ac"
 					ParentStyle="Declaration"
 					/>
 				<Style Name="Declare Interface" ParentStyle="Declare Class" />
@@ -303,7 +293,7 @@
 					Name="Ref to Global Var"
 					Bold="1"
 					Italic="1"
-					TextColor="#ffffff"
+					TextColor="#8787b8"
 					ParentStyle="Reference"
 					/>
 				<Style
@@ -335,39 +325,33 @@
 				<Style Name="Ref to File" ParentStyle="Reference" />
 				<Style
 					Name="Comment Heading 1"
-					Bold="1"
-					Underline="Thick"
+					ParentStyle="Comment"
 					FontName="Arial"
 					FontPitchFamily="2"
 					FontCharset="0"
-					ParentStyle="Comment"
+					Underline="Thick"
 					/>
 				<Style
 					Name="Comment Heading 2"
-					Bold="1"
-					Scale="130"
-					Underline="Single"
+					ParentStyle="Comment"
 					FontName="Arial"
 					FontPitchFamily="2"
 					FontCharset="0"
-					ParentStyle="Comment"
+					Underline="Single"
 					/>
 				<Style
 					Name="Comment Heading 3"
-					Bold="1"
-					Scale="120"
+					ParentStyle="Comment"
 					FontName="Arial"
 					FontPitchFamily="2"
 					FontCharset="0"
-					ParentStyle="Comment"
 					/>
 				<Style
 					Name="Comment Heading 4"
-					Bold="1"
+					ParentStyle="Comment"
 					FontName="Arial"
 					FontPitchFamily="2"
 					FontCharset="0"
-					ParentStyle="Comment"
 					/>
 				<Style Name="Comment Right" Italic="1" ParentStyle="Comment" />
 				<Style Name="Ref to Base Class" ParentStyle="Reference" />
@@ -385,26 +369,20 @@
 					ParentStyle="Comment"
 					/>
 				<Style Name="HTML or XML Element" />
-				<Style
-					Name="HTML Title"
-					Bold="1"
-					Underline="Single"
-					TextColor="#ff0000"
-					/>
+				<Style Name="HTML Title" TextColor="#bc4343" />
 				<Style Name="Perl POD" />
 				<Style Name="Perl End Script" />
 				<Style Name="Declare Method Prototype" ParentStyle="Declare Method" />
 				<Style Name="Ref to Method Prototype" ParentStyle="Ref to Method" />
 				<Style
 					Name="Comment To Do"
-					Scale="120"
-					Bold="1"
-					TextColor="#000000"
-					BackColor="#ffff00"
+					ParentStyle="Comment"
 					FontName="Arial"
 					FontPitchFamily="2"
 					FontCharset="0"
-					ParentStyle="Comment"
+					Bold="1"
+					TextColor="#000000"
+					BackColor="#ffff00"
 					/>
 				<Style Name="Ref to IDL Module" ParentStyle="Reference" />
 				<Style Name="Ref to IDL Library" ParentStyle="Reference" />
@@ -425,7 +403,7 @@
 				<Style Name="Comment Multi Line" ParentStyle="Comment" />
 				<Style Name="Parentheses" ParentStyle="Delimiter" />
 				<Style Name="HTML Body Text" FixedWhiteSpace="0" />
-				<Style Name="HTML Tag" Bold="1" TextColor="#00ffff" />
+				<Style Name="HTML Tag" TextColor="#00ffff" />
 				<Style Name="Standard Property" ParentStyle="Ref to Member" />
 				<Style Name="Standard Function" ParentStyle="Ref to Func" />
 				<Style Name="Standard Object" ParentStyle="Ref to Class" />
@@ -458,11 +436,10 @@
 					/>
 				<Style
 					Name="Snippet Input Field"
-					Bold="1"
 					TextColor="#ffffff"
-					BackColor="#215ba3"
+					BackColor="#1e5599"
 					/>
-				<Style Name="Register" Bold="1" TextColor="#008000" />
+				<Style Name="Register" TextColor="#008000" />
 				<Style
 					Name="Python Doc String"
 					Italic="1"
@@ -473,7 +450,7 @@
 				<Style
 					Name="Reference Highlight"
 					TextColor="#ffffff"
-					BackColor="#215ba3"
+					BackColor="#1e5599"
 					/>
 				<Style Name="Declare VHDL Entity" ParentStyle="Declaration" />
 				<Style Name="Declare VHDL Architecture" ParentStyle="Declaration" />
